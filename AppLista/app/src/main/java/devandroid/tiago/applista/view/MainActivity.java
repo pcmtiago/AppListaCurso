@@ -1,8 +1,10 @@
-package devandroid.tiago.applista;
+package devandroid.tiago.applista.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import devandroid.tiago.applista.R;
 
 public class MainActivity extends AppCompatActivity {
 
