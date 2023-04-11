@@ -3,6 +3,7 @@ package devandroid.tiago.applista.view;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import devandroid.tiago.applista.R;
 import devandroid.tiago.applista.model.Pessoa;
@@ -16,10 +17,13 @@ public class MainActivity extends AppCompatActivity {
     String dadosPessoa;
     String dadosOutraPessoa;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         pessoa = new Pessoa();
         //Atribuir contendo ao objeto(pessoa)
         //conforme model
@@ -35,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         outraPessoa.setTelefoneContato("51-99999999");
 
 
-        dadosPessoa = "Primeito nome: ";
+        /*dadosPessoa = "Primeito nome: ";
         dadosPessoa += pessoa.getPrimeiroNome();
         dadosPessoa += " Sobrenome: ";
         dadosPessoa += pessoa.getSobreNome();
@@ -51,10 +55,11 @@ public class MainActivity extends AppCompatActivity {
         dadosOutraPessoa += " Curso Desejado: ";
         dadosOutraPessoa += outraPessoa.getCursoDesejado();
         dadosOutraPessoa += " Telefone de Contato: ";
-        dadosOutraPessoa += outraPessoa.getTelefoneContato();
+        dadosOutraPessoa += outraPessoa.getTelefoneContato();*/
 
-        int parada =0;
 
+        Log.i("POO_Android",pessoa.toString());
+        Log.i("POO_Android",outraPessoa.toString());
 
     }
 }
