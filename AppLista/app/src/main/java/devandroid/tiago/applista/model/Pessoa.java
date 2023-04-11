@@ -49,4 +49,16 @@ public class Pessoa {
     public Pessoa(){
 
     }
+
+    //to String - para textos - para Strings de Caracteres
+
+    @Override
+    public String toString() {
+        return "Pessoa{" +
+                "primeiroNome='" + primeiroNome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", cursoDesejado='" + cursoDesejado + '\'' +
+                ", telefoneContato='" + telefoneContato + '\'' +
+                '}';
+    }
 }
